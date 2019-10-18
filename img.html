@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style1.css" type="text/css">
+      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div id="box" > 
+        <img id="solid">
+
+    </div><br>
+    <div >
+       
+        <button id="cat" onclick="mycat()">Cat</button>
+        <button id="parrot" onclick="myparrot()">Parrot</button>
+    </div>
+
+    <script>
+        function mycat(){
+            var id= document.getElementById("solid");
+            // var image = document.createElement("img");
+            id.setAttribute('src','cat.png');
+            document.appendChild(id);       
+             }
+        function myparrot(){
+            var id= document.getElementById("solid");
+            // var image = document.createElement("img");
+            id.setAttribute('src','parrot.jpg');
+            document.appendChild(id);        
+            }
+        //     {
+        //     if (document.getElementById("cat")) {
+        //         <img src="cat.jpg" alt="cat" style="width:60px;height:60px;">
+              
+        //     } else {
+        //         <img src="parrot.jpg" alt="parrot" style="width:60px;height:60px;">
+        
+        //      }
+        //     document.getElementById("solid").innerHTML = image;
+        //   }
+    </script>
+</body>
+</html>
